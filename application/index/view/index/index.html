@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="keywords" content="快速课件开发, 课件开发，storyline课件开发, storyline咨询, 课件皮肤开发, 课件播放器开发" >
+    <meta name="description" content="成都学知乐科技有限公司成立于2014年，以学知乐网为主体网站，致力于国内教育行业课件制作领域领先的技术研究与应用，并为互联网非专业人士及企业提供领先技术支持与解决方案。">
+    <title>专业课件制作软件storyline2实例系列课程</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet"  href="/static/css/bootstrap-theme.css" type="text/css" media="all">
+    <script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+    <link rel="stylesheet"  href="/static/css/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="/static/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script> (function() {if (!/*@cc_on!@*/0) return;var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');var i= e.length; while (i--){ document.createElement(e[i]) } })()</script>
+    <!--[if lte IE 8]><script src="/static/js/respond.min.js"></script><![endif]-->
+</head>
+<body class="home blog">
+<header id="header" class="navbar-default">
+    <div class="container clearfix">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-menu">
+                <span class="sr-only">导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="/static/img/logo.png" alt="Vitality"></a>
+        </div>
+        <nav class="collapse navbar-collapse navbar-menu">
+            <ul id="menu-menu" class="nav navbar-nav nav-margin-left">
+                <li class="menu-item"><a href="/">首页</a></li>
+                <li class="menu-item dropdown">
+                    <a href="/fuwu" class="dropdown-toggle">服务</a>
+                    <ul role="menu" class=" dropdown-menu">
+                        <li class="menu-item"><a href="#">课件开发</a></li>
+                        <li class="menu-item"><a href="#">课件开发赋能培训</a></li>
+                        <li class="menu-item"><a href="#">播放器定制</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="/kecheng" class="dropdown-toggle">教学</a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li class="menu-item"><a href="#">教学课程</a></li>
+                        <li class="menu-item"><a href="#">教学案例</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="/anli" class="dropdown-toggle">发现</a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li class="menu-item"><a href="#">课件管理</a></li>
+                        <li class="menu-item"><a href="#">课件上传</a></li>
+                        <li class="menu-item"><a href="#">语音转写</a></li>
+                        <li class="menu-item"><a href="#">文字识别</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="/about" class="dropdown-toggle">关于我们</a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li class="menu-item"><a href="#">公司简介</a></li>
+                        <li class="menu-item"><a href="#">联系我们</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="menu-menu1" class="nav navbar-nav navbar-right"></ul>
+        </nav><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</header>
+<div id="wrap">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="http://www.xzhile.com/wp-content/uploads/2015/12/bg3.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="http://www.xzhile.com/wp-content/uploads/2015/12/slide1-bg.jpg" alt="...">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+   <div class="container wrap">
+        <section class="feature section row loaded">
+            <h2 class="text-center fea-title">我们能为您做什么？</h2>
+            <div class="fea fea-1 col-xs-12 col-sm-6 col-md-4 text-center">
+                <i class="fa fa-users fea-icon-1"></i>
+                <h3 class="fea-item-title">课件开发</h3>
+                <p>十年经验的高质量课件制作团队，专业的articulate相关软件课件制作人员，多样化的课程形式满足不同客户需求。</p>
+            </div>
+            <div class="fea fea-2 col-xs-12 col-sm-6 col-md-4 text-center">
+                <i class="fa fa-sliders fea-icon-2"></i>
+                <h3 class="fea-item-title">课件开发赋能培训</h3>
+                <p>为客户提供PPT、Articulate Storyline、Lectora、Ispring等国际知名课程开发工具的使用培训，帮助客户自行开发课程。</p>
+            </div>
+            <div class="fea fea-3 col-xs-12 col-sm-6 col-md-4 text-center">
+                <i class="fa fa-search fea-icon-3"></i>
+                <h3 class="fea-item-title">Storyline播放器定制</h3>
+                <p>国内唯一一家提供storyline软件课件的播放器定制业务。定制符合贵公司企业文化特点的播放器；根据您的商业用途增添新的播放器功能等。</p>
+            </div>
+        </section>
+        <section class="products section loaded">
+            <div class="s-head clearfix">
+                <h3 class="s-head-title">案例分享</h3>
+                <p class="s-sub-title">Latest Cases </p>
+            </div>
+            <ul class="p-list clearfix">
+                <li class="col-md-3 col-sm-6 p-item">
+                    <div class="p-item-wrap">
+                        <a class="thumb" href="/007/show/story.html"><img width="376" height="320" src="/static/007/anli007_01.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="圆的面积 "></a>
+                        <h2 class="title"><a href="/007/show/story.html" title="圆的面积 ">圆的面积 </a></h2>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 p-item">
+                    <div class="p-item-wrap">
+                        <a class="thumb" href="/011/show/story.html"><img width="413" height="320" src="/011/anli011_01.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="仿某网站在线测试题"></a>
+                        <h2 class="title"><a href="/011/show/story.html" title="仿某网站在线测试题">仿某网站在线测试题</a></h2>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 p-item">
+                    <div class="p-item-wrap">
+                        <a class="thumb" href="/009/show/story.html"><img width="452" height="320" src="/009/anli009_01.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="打怪游戏"></a>
+                        <h2 class="title"><a href="/009/show/story.html" title="打怪游戏">打怪游戏</a></h2>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 p-item">
+                    <div class="p-item-wrap">
+                        <a class="thumb" href="/008/show/story.html"><img width="295" height="320" src="/008/anli008_01.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="找不同"></a>
+                        <h2 class="title"><a href="/008/show/story.html" title="找不同">找不同</a></h2>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 p-item">
+                    <div class="p-item-wrap">
+                        <a class="thumb" href="/004/show/story.html"><img width="358" height="320" src="/004/anli004_01.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="数学小游戏"></a>
+                        <h2 class="title"><a href="/004/show/story.html" title="数学小游戏">数学小游戏</a></h2>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 p-item">
+                    <div class="p-item-wrap">
+                        <a class="thumb" href="/003/show/story.html"><img width="480" height="320" src="/003/anli003_01.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="滑动变阻器" ></a>
+                        <h2 class="title"><a href="/003/show/story.html" title="滑动变阻器">滑动变阻器</a></h2>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 p-item">
+                    <div class="p-item-wrap">
+                        <a class="thumb" href="/006/show/story.html"><img width="413" height="320" src="/006/anli006_01.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="下拉菜单"></a>
+                        <h2 class="title"><a href="/006/show/story.html" title="下拉菜单">下拉菜单</a></h2>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 p-item">
+                    <div class="p-item-wrap">
+                        <a class="thumb" href="/001/show/story.html"><img width="251" height="320" src="/001/anli001_01.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="服装选择看优雅与否"></a>
+                        <h2 class="title"><a href="/001/show/story.html" title="服装选择看优雅与否">服装选择看优雅与否</a></h2>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!--
+        <section class="section">
+			<div class="s-head clearfix">
+				<h3 class="s-head-title">热门播放器</h3>
+                <p class="s-sub-title">Hot Products</p>
+            </div>
+            <div class="flexslider j-slider">
+				<div class="flex-viewport" style="overflow: hidden; position: relative;">
+					<ul class="slides" style="width: 2400%; transition-duration: 0s; transform: translate3d(-1150px, 0px, 0px);">
+						<li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/%e8%87%aa%e5%88%b6diy%e5%b0%8f%e5%b0%8f%e8%af%b7%e6%9f%ac%e5%8d%a1%e7%89%87/"><img width="376" height="320" src="/img/46bb926e590b41104402816e06d7ab68414f50373c9e7-mT5Hgc_fw658-600x510.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="46bb926e590b41104402816e06d7ab68414f50373c9e7-mT5Hgc_fw658" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/%e8%87%aa%e5%88%b6diy%e5%b0%8f%e5%b0%8f%e8%af%b7%e6%9f%ac%e5%8d%a1%e7%89%87/" title="自制DIY小小请柬卡片">自制DIY小小请柬卡片</a></h2>
+                            </div>
+                        </li>
+                        <li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/poster-annual-2015%e6%b5%b7%e6%8a%a5%e8%ae%be%e8%ae%a1%e8%8e%b7%e5%a5%96%e4%bd%9c%e5%93%81/"><img width="413" height="320" src="/img/4eff559b17b2b85435c8bb62198896414968572f16a95-Jpnb3e_fw658-658x510.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="4eff559b17b2b85435c8bb62198896414968572f16a95-Jpnb3e_fw658" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/poster-annual-2015%e6%b5%b7%e6%8a%a5%e8%ae%be%e8%ae%a1%e8%8e%b7%e5%a5%96%e4%bd%9c%e5%93%81/" title="Poster Annual 2015海报设计获奖作品">Poster Annual 2015海报设计获奖作品</a></h2>
+                            </div>
+                        </li>
+                        <li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/qq%e9%9f%b3%e4%b9%90%e5%8d%81%e5%b9%b4%e4%b9%90%e8%af%ad%e8%b7%af%e6%b5%b7%e6%8a%a5/"><img width="452" height="320" src="/img/znlJa13Axh-720x510.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="znlJa13Axh" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/qq%e9%9f%b3%e4%b9%90%e5%8d%81%e5%b9%b4%e4%b9%90%e8%af%ad%e8%b7%af%e6%b5%b7%e6%8a%a5/" title="QQ音乐十年乐语路海报">QQ音乐十年乐语路海报</a></h2>
+                            </div>
+                        </li>
+                        <li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/%e6%97%a5%e6%9c%ac%e6%b5%b7%e6%8a%a5%e5%88%86%e4%ba%ab/"><img width="295" height="320" src="/img/f01f3aac2eb89d541be9007e1164051201f91361232da-zMszpS_fw658-470x510.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="日本海报" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/%e6%97%a5%e6%9c%ac%e6%b5%b7%e6%8a%a5%e5%88%86%e4%ba%ab/" title="日本海报分享">日本海报分享</a></h2>
+                            </div>
+                        </li>
+                        <li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/%e7%b2%be%e7%be%8e%e7%9a%84%e7%ba%b8%e5%93%81%e9%9b%95%e5%88%bb/"><img width="358" height="320" src="/img/335f044819fffa387b2b05fcf86feac266a066def431-D6GA7r_fw658-570x510.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="纸品雕刻，可以用到婚礼请柬上" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/%e7%b2%be%e7%be%8e%e7%9a%84%e7%ba%b8%e5%93%81%e9%9b%95%e5%88%bb/" title="精美的纸品雕刻">精美的纸品雕刻</a></h2>
+                            </div>
+                        </li>
+                        <li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/%e5%9b%bd%e5%a4%96%e5%88%9b%e6%84%8f%e8%af%b7%e6%9f%ac%e8%ae%be%e8%ae%a1%e4%bd%9c%e5%93%81/"><img width="480" height="320" src="/img/1628b510c15294e13e2ff7d0e7467f976ab58ea9ebc9-y5VWcq_fw658.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="1628b510c15294e13e2ff7d0e7467f976ab58ea9ebc9-y5VWcq_fw658" srcset="http://demo.izt8.com/vitality/wp-content/uploads/sites/3/2015/06/1628b510c15294e13e2ff7d0e7467f976ab58ea9ebc9-y5VWcq_fw658-300x200.jpeg 300w, http://demo.izt8.com/vitality/wp-content/uploads/sites/3/2015/06/1628b510c15294e13e2ff7d0e7467f976ab58ea9ebc9-y5VWcq_fw658.jpeg 600w" sizes="(max-width: 480px) 100vw, 480px" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/%e5%9b%bd%e5%a4%96%e5%88%9b%e6%84%8f%e8%af%b7%e6%9f%ac%e8%ae%be%e8%ae%a1%e4%bd%9c%e5%93%81/" title="国外创意请柬设计作品">国外创意请柬设计作品</a></h2>
+                            </div>
+                        </li>
+                        <li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/%e7%bb%99%e5%8a%9b%e5%88%9b%e6%84%8f%e9%a3%9f%e5%93%81%e5%b9%bf%e5%91%8a/"><img width="413" height="320" src="/img/0c963b2923e6e4e562b3da8b5123524c4bcb46cc72303-C42QVG_fw658-658x510.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="食品广告" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/%e7%bb%99%e5%8a%9b%e5%88%9b%e6%84%8f%e9%a3%9f%e5%93%81%e5%b9%bf%e5%91%8a/" title="给力创意食品广告">给力创意食品广告</a></h2>
+                            </div>
+                        </li>
+                        <li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/%e5%af%bf%e5%8f%b8%e8%bf%9e%e9%94%81%e5%93%81%e7%89%8cplanet-sushi%e9%a3%9f%e7%89%a9%e7%be%8e%e8%8b%a5%e7%83%9f%e8%8a%b1/"><img width="251" height="320" src="/img/a72e15b5892538ea802f184b35e0ea05f42e57431e3f3-ubtZ4v_fw658-400x510.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="寿司连锁品牌Planet Sushi:食物“美”若烟花" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/%e5%af%bf%e5%8f%b8%e8%bf%9e%e9%94%81%e5%93%81%e7%89%8cplanet-sushi%e9%a3%9f%e7%89%a9%e7%be%8e%e8%8b%a5%e7%83%9f%e8%8a%b1/" title="寿司连锁品牌Planet Sushi:食物“美”若烟花">寿司连锁品牌Planet Sushi:食物“美”若烟花</a></h2>
+                            </div>
+                        </li>
+                        <li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/%e5%88%9b%e6%84%8f%e7%9a%84%e9%a3%9f%e5%93%81%e5%92%8c%e9%a5%ae%e6%96%99%e5%b9%bf%e5%91%8a%e6%ac%a3%e8%b5%8f/"><img width="376" height="320" src="/img/85f1c00fb3bc94bbcb127512c08998917bee2f2c1de75-P2ILXf_fw658-600x510.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="创意的食品和饮料广告欣赏 广告招贴-P2ILXf_fw658" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/%e5%88%9b%e6%84%8f%e7%9a%84%e9%a3%9f%e5%93%81%e5%92%8c%e9%a5%ae%e6%96%99%e5%b9%bf%e5%91%8a%e6%ac%a3%e8%b5%8f/" title="创意的食品和饮料广告欣赏">创意的食品和饮料广告欣赏</a></h2>
+                            </div>
+                        </li>
+                        <li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/%e8%bf%bd%e6%b1%82%e6%b0%94%e8%b4%a8%e7%9a%84%e5%8c%85%e8%a3%85%e7%9b%92/"><img width="480" height="320" src="/img/076e3710ccbe9e897c6f9b718f8a63b2c95aeefb19a01-7ABRiV_fw658.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="包装盒" srcset="http://demo.izt8.com/vitality/wp-content/uploads/sites/3/2015/06/076e3710ccbe9e897c6f9b718f8a63b2c95aeefb19a01-7ABRiV_fw658-300x200.jpeg 300w, http://demo.izt8.com/vitality/wp-content/uploads/sites/3/2015/06/076e3710ccbe9e897c6f9b718f8a63b2c95aeefb19a01-7ABRiV_fw658.jpeg 600w" sizes="(max-width: 480px) 100vw, 480px" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/%e8%bf%bd%e6%b1%82%e6%b0%94%e8%b4%a8%e7%9a%84%e5%8c%85%e8%a3%85%e7%9b%92/" title="追求气质的包装盒">追求气质的包装盒</a></h2>
+                            </div>
+                        </li>
+                        <li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/%e5%85%85%e6%bb%a1%e5%88%9b%e6%84%8f%e7%9a%84%e5%8c%85%e8%a3%85%e8%ae%be%e8%ae%a1%e4%bd%9c%e5%93%81%e6%ac%a3%e8%b5%8f/"><img width="429" height="320" src="/img/Designs-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Designs-2" srcset="http://demo.izt8.com/vitality/wp-content/uploads/sites/3/2015/06/Designs-2-300x224.jpg 300w, http://demo.izt8.com/vitality/wp-content/uploads/sites/3/2015/06/Designs-2.jpg 600w" sizes="(max-width: 429px) 100vw, 429px" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/%e5%85%85%e6%bb%a1%e5%88%9b%e6%84%8f%e7%9a%84%e5%8c%85%e8%a3%85%e8%ae%be%e8%ae%a1%e4%bd%9c%e5%93%81%e6%ac%a3%e8%b5%8f/" title="充满创意的包装设计作品欣赏">充满创意的包装设计作品欣赏</a></h2>
+                            </div>
+                        </li>
+                        <li style="width: 277.5px; float: left; display: block;">
+                            <div class="s-item-wrap">
+                                <a class="thumb" href="http://demo.izt8.com/vitality/%e5%9c%a3%e8%af%9e%e6%9d%a5%e8%a2%ad-%e7%b2%be%e7%be%8e%e7%a4%bc%e5%93%81%e5%8c%85%e8%a3%85%e8%ae%be%e8%ae%a1/"><img width="345" height="320" src="/img/fff790a27097b35f2dd5e8b41bd69803ed950e129dc7-CJKnpf_fw658-550x510.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="圣诞来袭—精美礼品包装设计" draggable="false"></a>
+                                <h2 class="title"><a href="http://demo.izt8.com/vitality/%e5%9c%a3%e8%af%9e%e6%9d%a5%e8%a2%ad-%e7%b2%be%e7%be%8e%e7%a4%bc%e5%93%81%e5%8c%85%e8%a3%85%e8%ae%be%e8%ae%a1/" title="圣诞来袭—精美礼品包装设计">圣诞来袭—精美礼品包装设计</a></h2>
+                            </div>
+                        </li>
+                     </ul>
+				 </div>
+			<ol class="flex-control-nav flex-control-paging">
+				<li><a class="">1</a></li>
+				<li><a class="flex-active">2</a></li>
+				<li><a class="">3</a></li>
+			</ol>
+			<ul class="flex-direction-nav">
+				<li class="flex-nav-prev"><a class="flex-prev" href="http://demo.izt8.com/vitality/#">Previous</a></li>
+				<li class="flex-nav-next"><a class="flex-next" href="http://demo.izt8.com/vitality/#">Next</a></li>
+			</ul>
+		</div>
+    </section>
+    -->
+        <section class="row news section">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="news-hd clearfix">
+
+                <ul class="list">
+
+                </ul>
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="news-hd clearfix">
+
+                <ul class="list">
+
+                </ul>
+            </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="s-head clearfix">
+                <h3 class="s-head-title">我们已为他们提供服务</h3>
+                <p class="s-sub-title">Our Clients</p>
+            </div>
+            <ul class="c-list clearfix">
+                <li class="c-item"><a href="javascript:void(0);" target="_blank" title="国家电网公司"><img src="/static/img/gongsi/logo_guojiadianwang.png" height="80" /></a></li>
+                <li class="c-item"><a href="#" target="_blank" title="中国烟草"><img style="margin-top:-12px;" src="/static/img/gongsi/logo_zhongguoyancao.png" height="80" /></a></li>
+                <li class="c-item"><a href="#" target="_blank" title="阿里云"><img  style="margin-top:-5px;" src="/static/img/gongsi/logo_zhongguohangtian.png" height="80" /></a></li>
+                <li class="c-item"><a href="#" target="_blank" title="爱思考"><img  style="margin-top:-5px;" src="/static/img/gongsi/logo_zhongguotiejian.jpg"  height="80" /></a></li>
+            </ul>
+        </section>
+    </div><!-- /.container -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about row">
+                <div id="nav_menu-3" class="col-md-2 col-sm-4 col-xs-4 widget widget_nav_menu">
+                    <h3 class="widget-title">服务</h3>
+                    <div class="menu-%e4%ba%a7%e5%93%81%e5%88%86%e7%b1%bb-container">
+                        <ul id="menu-%e4%ba%a7%e5%93%81%e5%88%86%e7%b1%bb" class="menu">
+                            <li id="menu-item-160" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-160"><a href="/fuwu">课件定制</a></li>
+                            <li id="menu-item-161" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161"><a href="/fuwu">播放器定制</a></li>
+                            <li id="menu-item-163" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-163"><a href="/fuwu">软件咨询</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav_menu-4" class="col-md-2 col-sm-4 col-xs-4 widget widget_nav_menu">
+                    <h3 class="widget-title">合作</h3>
+                    <div class="menu-footer-container">
+                        <ul id="menu-footer" class="menu">
+                            <li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165"><a href="/about">关于我们</a></li>
+                            <li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="/about/#contact">联系我们</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="/about/upload-lesson">上传课件</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="pages-2" class="col-md-2 col-sm-4 col-xs-4 widget widget_pages">
+                    <h3 class="widget-title">关于</h3>
+                    <ul>
+                        <li class="page_item page-item-152"><a href="/about">关于我们</a></li>
+                        <li class="page_item page-item-8"><a href="/about/#contact">联系我们</a></li>
+                        <li class="page_item page-item-8"><a href="#" style="color:#343434;">空白</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-8 widget contact-us">
+                    <h3 class="widget-title">联系</h3>
+                    <p><i class="fa fa-phone"></i> 电话：18113181617</p>
+                    <p><i class="fa fa-qq"></i> Q&nbsp;Q：<a href="http://wpa.qq.com/msgrd?v=3&uin=21009409&site=qq&menu=yes" target="_blank">21009409</a></p>
+                    <p><i class="fa fa-qq"></i> Articulate软件交流群:242904469</p>
+                    <p><i class="fa fa-qq"></i> Sl2教育技术交流群:299306256</p>
+                    <p><i class="fa fa-envelope"></i> 邮箱：fuwu@xzhile.com</p>
+                    <p><i class="fa fa-map-marker"></i> 地址：成都市高新区天府大道中段1388号美年广场D座281号</p>
+                </div>
+                <div class="col-md-2 widget col-sm-6 col-xs-4">
+                    <h3 class="widget-title">关注</h3>
+                    <p class="guanzhu">
+                        <a target="_blank" href="javascript:;"><i class="fa fa-weibo"></i></a>
+                        <a id="j-weixin" href="javascript:;"><i class="fa fa-weixin"></i></a>
+                        <a target="_blank" href="javascript:;"><i class="fa fa-tencent-weibo"></i></a>
+                    </p>
+                    <p class="qrcode"><img src="/static/img/weixin.jpg" alt="微信二维码" width="100"></p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                © 2014 xzhile.com | 成都学知乐科技有限公司. All Rights Reserved.  | <a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">蜀ICP备14029682号-1</a>
+            </div>
+        </div>
+    </footer>
+    <div class="action" style="top:50%;">
+        <div class="a-box contact">
+            <div class="contact-wrap">
+                <h3 class="contact-title">联系方式</h3>
+                <h4 style="text-align: center;"><span style="color: #2d6ded;"><strong>18113181617</strong></span></h4>
+                <p>在线咨询：<a href="http://wpa.qq.com/msgrd?uin=21009409" target="_blank"><img class="alignnone" title="点击这里给我发消息" src="/static/img/qqjt.gif" alt="点击这里给我发消息" border="0"></a></p>
+                <p>邮件：fuwu@xzhile.com</p>
+                <p>工作时间：周一至周五，9:00-18:00，节假日休息</p>
+            </div>
+        </div>
+        <div class="a-box wechat">
+            <div class="wechat-wrap">
+                <img src="/static/img/weixin.jpg" alt="二维码">
+            </div>
+        </div>
+        <div class="bdsharebuttonbox bdshare-button-style1-16" data-tag="global" data-bd-bind="1450936732945"><a href="http://www.xzhile.com" class="a-box share bds_more" data-cmd="more"></a></div>
+        <div class="a-box gotop" id="j-top" style="display: none;"></div>
+    </div>
+    <script type="text/javascript" src="/static/js/main.js"></script>
+   </div></body></html>
